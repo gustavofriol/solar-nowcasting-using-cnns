@@ -7,14 +7,19 @@
 
 A previsão de curto prazo da geração solar é um grande desafio devido à alta volatilidade das condições meteorolóigcas. Dentre um dos fatores de maior influência na geração, está a cobertura das nuvens: em dias parcialmente nublados, por exemplo, a geração dos painéis pode cair a valores próximos de zero em questão de minutos. Dessa forma, este projeto explora o uso de imagens do céu para prever a geração instantânea (nowcasting) de painéis fotovoltaicos, utilizando Redes Neurais Convolucionais (CNNs), de forma a extrair informações complexas que modelos tradicionais não conseguem capturar.
 
+Amostra do dataset utilizado no projeto, o qual pode ser encontrado em [[4]](#4). 
+
+<img width="2041" height="336" alt="skippd_sample" src="https://github.com/user-attachments/assets/8177e410-9992-430b-92d6-0d9a77fb719b" />
+
+
+
 Neste trabalho, duas arquiteturas de CNN foram implementadas e avaliadas:
 
 - A arquitetura SUNSET, proposta por Sun et al. em [[1]](#1), utilizada como nosso baseline.
 - Uma ResNet50V2 pré-treinada, que passou por um processo de fine-tuning para comparar seu desempenho com o modelo de referência.
 
-O dataset utilizado no projeto pode ser encontrado em [[4]](#4). 
 
-**OBS**: Para informações detalhadas sobre a metodologia adotada nos experimentos, bem como os códigos utilizados, consultar o [relatório do projeto](Relatorio-Projeto-Final-EEL7513-Gustavo-F-Bento.pdf) e o [notebook jupyter](solar_nowcasting_using_cnns.ipynb) onde foi feito todo o desenvolvimento.
+**OBS**: Para informações detalhadas sobre todo o desenvolvimento do projeto, bem como os códigos utilizados, consultar o [relatório](Relatorio-Projeto-Final-EEL7513-Gustavo-F-Bento.pdf) e o [notebook jupyter](solar_nowcasting_using_cnns.ipynb) disponibilizados no repositório.
 
 
 ## Resultados Gerais
